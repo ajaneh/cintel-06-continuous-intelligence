@@ -63,7 +63,7 @@ The dataset includes a short period of degraded performance
 so that monitoring signals and anomaly detection
 produce visible results.
 
-![Raw Metrics]("artifacts\raw_metrics.png")
+![Raw Metrics]("artifacts/raw_metrics.png")
 
 ## Working Files
 
