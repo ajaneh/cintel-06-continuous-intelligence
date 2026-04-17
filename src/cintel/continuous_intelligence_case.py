@@ -52,6 +52,7 @@ import logging
 from pathlib import Path
 from typing import Final
 
+import matplotlib.pyplot as plt
 import polars as pl
 from datafun_toolkit.logger import get_logger, log_header, log_path
 
@@ -106,6 +107,18 @@ def main() -> None:
 
     LOG.info(f"STEP 1. Loaded {df.height} system records")
 
+    # GRAPH RAW DATA
+    # LOG.info("STEP 1. Graphing raw metrics...")
+    fig1, ax1 = plt.subplots(1, 3, tight_layout=True)
+    for col_name in df.columns:
+        ax1[df.columns.index(col_name)].plot(df[col_name], marker='o')
+        ax1[df.columns.index(col_name)].set_title(col_name)
+    fig1.suptitle("Raw System Metrics")
+    fig1.supylabel("Metric Value")
+    fig1.supxlabel("Count")
+    fig1.suptitle("Raw System Metrics")
+    plt.savefig(ARTIFACTS_DIR / "raw_metrics.png")
+    plt.close(fig1)
     # ----------------------------------------------------
     # STEP 2: DESIGN SIGNALS
     # ----------------------------------------------------
