@@ -12,7 +12,7 @@ I used the provided dataset system_metrics which contains number of requests, nu
 The signals of interest that were created were averages and z scores for Error rate and Latency.
 The system was summarized with the averages of each incoming signal. Then expanded to include average error rate, average latency, and average Z scores for error rate and latency.
 
-![Raw Data]((/artifacts/raw_metrics.png))
+![Raw Data](/artifacts/raw_metrics.png)
 
 For the plot the signals were smoothed by a rolling average with a window of 5
 ![Signals](/artifacts/signals.png)
