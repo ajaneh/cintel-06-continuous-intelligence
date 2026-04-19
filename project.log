@@ -149,3 +149,681 @@
 2026-04-17 11:29:39 | INFO | P6 | Pipeline executed successfully!
 2026-04-17 11:29:39 | INFO | P6 | ========================
 2026-04-17 11:29:39 | INFO | P6 | END main()
+2026-04-17 11:35:11 | INFO | P6 | === RUN START ===
+2026-04-17 11:35:11 | INFO | P6 | project=CINTEL
+2026-04-17 11:35:11 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-17 11:35:11 | INFO | P6 | python=3.14.0
+2026-04-17 11:35:11 | INFO | P6 | os=Windows 11
+2026-04-17 11:35:11 | INFO | P6 | shell=powershell
+2026-04-17 11:35:11 | INFO | P6 | cwd=.
+2026-04-17 11:35:11 | INFO | P6 | github_actions=False
+2026-04-17 11:35:11 | INFO | P6 | ========================
+2026-04-17 11:35:11 | INFO | P6 | START main()
+2026-04-17 11:35:11 | INFO | P6 | ========================
+2026-04-17 11:35:11 | INFO | P6 | ROOT_DIR = .
+2026-04-17 11:35:11 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-17 11:35:11 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-17 11:35:11 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-17 11:35:11 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-17 11:35:12 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-17 11:35:13 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-17 11:35:13 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-17 11:35:13 | INFO | P6 | STEP 3. Anomalies detected: 7
+2026-04-17 11:35:13 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-17 11:35:13 | INFO | P6 | STEP 4. System assessment completed
+2026-04-17 11:35:13 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-17 11:35:13 | INFO | P6 | ========================
+2026-04-17 11:35:13 | INFO | P6 | Pipeline executed successfully!
+2026-04-17 11:35:13 | INFO | P6 | ========================
+2026-04-17 11:35:13 | INFO | P6 | END main()
+2026-04-19 13:40:37 | INFO | P6 | === RUN START ===
+2026-04-19 13:40:37 | INFO | P6 | project=CINTEL
+2026-04-19 13:40:37 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 13:40:37 | INFO | P6 | python=3.14.0
+2026-04-19 13:40:37 | INFO | P6 | os=Windows 11
+2026-04-19 13:40:37 | INFO | P6 | shell=powershell
+2026-04-19 13:40:37 | INFO | P6 | cwd=.
+2026-04-19 13:40:37 | INFO | P6 | github_actions=False
+2026-04-19 13:40:37 | INFO | P6 | ========================
+2026-04-19 13:40:37 | INFO | P6 | START main()
+2026-04-19 13:40:37 | INFO | P6 | ========================
+2026-04-19 13:40:37 | INFO | P6 | ROOT_DIR = .
+2026-04-19 13:40:37 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 13:40:37 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 13:40:37 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 13:40:37 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 13:40:38 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 13:40:38 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 13:40:38 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 13:40:38 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-19 13:40:38 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 5)
+┌──────────┬────────┬──────────────────┬────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ avg_latency_ms │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆ f64            │
+╞══════════╪════════╪══════════════════╪════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ 41.025641      │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ 42.5           │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ 43.902439      │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ 45.714286      │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ 43.902439      │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ 42.5           │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ 41.025641      │
+└──────────┴────────┴──────────────────┴────────────┴────────────────┘
+2026-04-19 13:40:38 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 13:40:38 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 13:40:38 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 13:40:38 | INFO | P6 | ========================
+2026-04-19 13:40:38 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 13:40:38 | INFO | P6 | ========================
+2026-04-19 13:40:38 | INFO | P6 | END main()
+2026-04-19 13:44:23 | INFO | P6 | === RUN START ===
+2026-04-19 13:44:23 | INFO | P6 | project=CINTEL
+2026-04-19 13:44:23 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 13:44:23 | INFO | P6 | python=3.14.0
+2026-04-19 13:44:23 | INFO | P6 | os=Windows 11
+2026-04-19 13:44:23 | INFO | P6 | shell=powershell
+2026-04-19 13:44:23 | INFO | P6 | cwd=.
+2026-04-19 13:44:23 | INFO | P6 | github_actions=False
+2026-04-19 13:44:23 | INFO | P6 | ========================
+2026-04-19 13:44:23 | INFO | P6 | START main()
+2026-04-19 13:44:23 | INFO | P6 | ========================
+2026-04-19 13:44:23 | INFO | P6 | ROOT_DIR = .
+2026-04-19 13:44:23 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 13:44:23 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 13:44:23 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 13:44:23 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 13:44:24 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 13:44:24 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 13:44:24 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 13:44:24 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-19 13:44:24 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 5)
+┌──────────┬────────┬──────────────────┬────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ avg_latency_ms │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆ f64            │
+╞══════════╪════════╪══════════════════╪════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ 41.025641      │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ 42.5           │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ 43.902439      │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ 45.714286      │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ 43.902439      │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ 42.5           │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ 41.025641      │
+└──────────┴────────┴──────────────────┴────────────┴────────────────┘
+2026-04-19 13:44:24 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 13:47:55 | INFO | P6 | === RUN START ===
+2026-04-19 13:47:55 | INFO | P6 | project=CINTEL
+2026-04-19 13:47:55 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 13:47:55 | INFO | P6 | python=3.14.0
+2026-04-19 13:47:55 | INFO | P6 | os=Windows 11
+2026-04-19 13:47:55 | INFO | P6 | shell=powershell
+2026-04-19 13:47:55 | INFO | P6 | cwd=.
+2026-04-19 13:47:55 | INFO | P6 | github_actions=False
+2026-04-19 13:47:55 | INFO | P6 | ========================
+2026-04-19 13:47:55 | INFO | P6 | START main()
+2026-04-19 13:47:55 | INFO | P6 | ========================
+2026-04-19 13:47:55 | INFO | P6 | ROOT_DIR = .
+2026-04-19 13:47:55 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 13:47:55 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 13:47:55 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 13:47:55 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 13:47:56 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 13:47:57 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 13:47:57 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 13:47:57 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-19 13:47:57 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 5)
+┌──────────┬────────┬──────────────────┬────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ avg_latency_ms │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆ f64            │
+╞══════════╪════════╪══════════════════╪════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ 41.025641      │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ 42.5           │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ 43.902439      │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ 45.714286      │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ 43.902439      │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ 42.5           │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ 41.025641      │
+└──────────┴────────┴──────────────────┴────────────┴────────────────┘
+2026-04-19 13:47:57 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 13:47:57 | INFO | P6 | STEP 4. System summary:
+shape: (1, 6)
+┌──────────────┬────────────┬────────────────┬────────────────┬──────────────┬────────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ system_state ┆ degradation_reason │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ ---          ┆ ---                │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ str          ┆ str                │
+╞══════════════╪════════════╪════════════════╪════════════════╪══════════════╪════════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ STABLE       ┆ NONE               │
+└──────────────┴────────────┴────────────────┴────────────────┴──────────────┴────────────────────┘
+2026-04-19 13:47:57 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 13:47:57 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 13:47:57 | INFO | P6 | ========================
+2026-04-19 13:47:57 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 13:47:57 | INFO | P6 | ========================
+2026-04-19 13:47:57 | INFO | P6 | END main()
+2026-04-19 13:49:38 | INFO | P6 | === RUN START ===
+2026-04-19 13:49:38 | INFO | P6 | project=CINTEL
+2026-04-19 13:49:38 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 13:49:38 | INFO | P6 | python=3.14.0
+2026-04-19 13:49:38 | INFO | P6 | os=Windows 11
+2026-04-19 13:49:38 | INFO | P6 | shell=powershell
+2026-04-19 13:49:38 | INFO | P6 | cwd=.
+2026-04-19 13:49:38 | INFO | P6 | github_actions=False
+2026-04-19 13:49:38 | INFO | P6 | ========================
+2026-04-19 13:49:38 | INFO | P6 | START main()
+2026-04-19 13:49:38 | INFO | P6 | ========================
+2026-04-19 13:49:38 | INFO | P6 | ROOT_DIR = .
+2026-04-19 13:49:38 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 13:49:38 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 13:49:38 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 13:49:38 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 13:49:39 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 13:49:40 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 13:49:40 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 13:49:40 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-19 13:49:40 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 5)
+┌──────────┬────────┬──────────────────┬────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ avg_latency_ms │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆ f64            │
+╞══════════╪════════╪══════════════════╪════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ 41.025641      │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ 42.5           │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ 43.902439      │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ 45.714286      │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ 43.902439      │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ 42.5           │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ 41.025641      │
+└──────────┴────────┴──────────────────┴────────────┴────────────────┘
+2026-04-19 13:49:40 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 13:49:40 | INFO | P6 | STEP 4. System summary:
+shape: (1, 5)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ degradation_reason │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ ---                │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ str                │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ NONE               │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────────┘
+2026-04-19 13:49:40 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 13:49:40 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 13:49:40 | INFO | P6 | ========================
+2026-04-19 13:49:40 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 13:49:40 | INFO | P6 | ========================
+2026-04-19 13:49:40 | INFO | P6 | END main()
+2026-04-19 14:02:15 | INFO | P6 | === RUN START ===
+2026-04-19 14:02:15 | INFO | P6 | project=CINTEL
+2026-04-19 14:02:15 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:02:15 | INFO | P6 | python=3.14.0
+2026-04-19 14:02:15 | INFO | P6 | os=Windows 11
+2026-04-19 14:02:15 | INFO | P6 | shell=powershell
+2026-04-19 14:02:15 | INFO | P6 | cwd=.
+2026-04-19 14:02:15 | INFO | P6 | github_actions=False
+2026-04-19 14:02:15 | INFO | P6 | ========================
+2026-04-19 14:02:15 | INFO | P6 | START main()
+2026-04-19 14:02:15 | INFO | P6 | ========================
+2026-04-19 14:02:15 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:02:15 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:02:15 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:02:15 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:02:15 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:02:15 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:05:07 | INFO | P6 | === RUN START ===
+2026-04-19 14:05:07 | INFO | P6 | project=CINTEL
+2026-04-19 14:05:07 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:05:07 | INFO | P6 | python=3.14.0
+2026-04-19 14:05:07 | INFO | P6 | os=Windows 11
+2026-04-19 14:05:07 | INFO | P6 | shell=powershell
+2026-04-19 14:05:07 | INFO | P6 | cwd=.
+2026-04-19 14:05:07 | INFO | P6 | github_actions=False
+2026-04-19 14:05:07 | INFO | P6 | ========================
+2026-04-19 14:05:07 | INFO | P6 | START main()
+2026-04-19 14:05:07 | INFO | P6 | ========================
+2026-04-19 14:05:07 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:05:07 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:05:07 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:05:07 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:05:07 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:05:08 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:06:14 | INFO | P6 | === RUN START ===
+2026-04-19 14:06:14 | INFO | P6 | project=CINTEL
+2026-04-19 14:06:14 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:06:14 | INFO | P6 | python=3.14.0
+2026-04-19 14:06:14 | INFO | P6 | os=Windows 11
+2026-04-19 14:06:14 | INFO | P6 | shell=powershell
+2026-04-19 14:06:14 | INFO | P6 | cwd=.
+2026-04-19 14:06:14 | INFO | P6 | github_actions=False
+2026-04-19 14:06:14 | INFO | P6 | ========================
+2026-04-19 14:06:14 | INFO | P6 | START main()
+2026-04-19 14:06:14 | INFO | P6 | ========================
+2026-04-19 14:06:14 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:06:14 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:06:14 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:06:14 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:06:14 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:06:14 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:06:30 | INFO | P6 | === RUN START ===
+2026-04-19 14:06:30 | INFO | P6 | project=CINTEL
+2026-04-19 14:06:30 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:06:30 | INFO | P6 | python=3.14.0
+2026-04-19 14:06:30 | INFO | P6 | os=Windows 11
+2026-04-19 14:06:30 | INFO | P6 | shell=powershell
+2026-04-19 14:06:30 | INFO | P6 | cwd=.
+2026-04-19 14:06:30 | INFO | P6 | github_actions=False
+2026-04-19 14:06:30 | INFO | P6 | ========================
+2026-04-19 14:06:30 | INFO | P6 | START main()
+2026-04-19 14:06:30 | INFO | P6 | ========================
+2026-04-19 14:06:30 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:06:30 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:06:30 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:06:30 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:06:30 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:06:31 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:07:04 | INFO | P6 | === RUN START ===
+2026-04-19 14:07:04 | INFO | P6 | project=CINTEL
+2026-04-19 14:07:04 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:07:04 | INFO | P6 | python=3.14.0
+2026-04-19 14:07:04 | INFO | P6 | os=Windows 11
+2026-04-19 14:07:04 | INFO | P6 | shell=powershell
+2026-04-19 14:07:04 | INFO | P6 | cwd=.
+2026-04-19 14:07:04 | INFO | P6 | github_actions=False
+2026-04-19 14:07:04 | INFO | P6 | ========================
+2026-04-19 14:07:04 | INFO | P6 | START main()
+2026-04-19 14:07:04 | INFO | P6 | ========================
+2026-04-19 14:07:04 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:07:04 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:07:04 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:07:04 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:07:04 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:07:05 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:07:06 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:07:06 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:07:06 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0
+2026-04-19 14:07:06 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ -0.549844       ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ -1.270843       ┆ -0.908764      │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ -1.25081        ┆ -1.358685      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:07:06 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:07:06 | INFO | P6 | STEP 4. System summary:
+shape: (1, 6)
+┌──────────────┬────────────┬────────────────┬────────────────┬──────────────┬────────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ system_state ┆ degradation_reason │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ ---          ┆ ---                │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ str          ┆ str                │
+╞══════════════╪════════════╪════════════════╪════════════════╪══════════════╪════════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ STABLE       ┆ NONE               │
+└──────────────┴────────────┴────────────────┴────────────────┴──────────────┴────────────────────┘
+2026-04-19 14:07:06 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:07:06 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:07:06 | INFO | P6 | ========================
+2026-04-19 14:07:06 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:07:06 | INFO | P6 | ========================
+2026-04-19 14:07:06 | INFO | P6 | END main()
+2026-04-19 14:17:46 | INFO | P6 | === RUN START ===
+2026-04-19 14:17:46 | INFO | P6 | project=CINTEL
+2026-04-19 14:17:46 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:17:46 | INFO | P6 | python=3.14.0
+2026-04-19 14:17:46 | INFO | P6 | os=Windows 11
+2026-04-19 14:17:46 | INFO | P6 | shell=powershell
+2026-04-19 14:17:46 | INFO | P6 | cwd=.
+2026-04-19 14:17:46 | INFO | P6 | github_actions=False
+2026-04-19 14:17:46 | INFO | P6 | ========================
+2026-04-19 14:17:46 | INFO | P6 | START main()
+2026-04-19 14:17:46 | INFO | P6 | ========================
+2026-04-19 14:17:46 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:17:46 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:17:46 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:17:46 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:17:46 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:17:46 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:17:47 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:17:47 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:17:47 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:17:47 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ -0.549844       ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ -1.270843       ┆ -0.908764      │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ -1.25081        ┆ -1.358685      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:17:47 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:21:21 | INFO | P6 | === RUN START ===
+2026-04-19 14:21:21 | INFO | P6 | project=CINTEL
+2026-04-19 14:21:21 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:21:21 | INFO | P6 | python=3.14.0
+2026-04-19 14:21:21 | INFO | P6 | os=Windows 11
+2026-04-19 14:21:21 | INFO | P6 | shell=powershell
+2026-04-19 14:21:21 | INFO | P6 | cwd=.
+2026-04-19 14:21:21 | INFO | P6 | github_actions=False
+2026-04-19 14:21:21 | INFO | P6 | ========================
+2026-04-19 14:21:21 | INFO | P6 | START main()
+2026-04-19 14:21:21 | INFO | P6 | ========================
+2026-04-19 14:21:21 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:21:21 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:21:21 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:21:21 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:21:21 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:21:22 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:21:23 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:21:23 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:21:23 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:21:23 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ 0.549844        ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ 1.270843        ┆ 0.908764       │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ 1.25081         ┆ 1.358685       │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:21:23 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:21:23 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ 1.077252       ┆ 1.161562       ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:21:23 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:21:23 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:21:23 | INFO | P6 | ========================
+2026-04-19 14:21:23 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:21:23 | INFO | P6 | ========================
+2026-04-19 14:21:23 | INFO | P6 | END main()
+2026-04-19 14:28:17 | INFO | P6 | === RUN START ===
+2026-04-19 14:28:17 | INFO | P6 | project=CINTEL
+2026-04-19 14:28:17 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:28:17 | INFO | P6 | python=3.14.0
+2026-04-19 14:28:17 | INFO | P6 | os=Windows 11
+2026-04-19 14:28:17 | INFO | P6 | shell=powershell
+2026-04-19 14:28:17 | INFO | P6 | cwd=.
+2026-04-19 14:28:17 | INFO | P6 | github_actions=False
+2026-04-19 14:28:17 | INFO | P6 | ========================
+2026-04-19 14:28:17 | INFO | P6 | START main()
+2026-04-19 14:28:17 | INFO | P6 | ========================
+2026-04-19 14:28:17 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:28:17 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:28:17 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:28:17 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:28:17 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:28:18 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:28:19 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:28:19 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:28:19 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:28:19 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ 0.549844        ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ 1.270843        ┆ 0.908764       │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ 1.25081         ┆ 1.358685       │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:28:19 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:28:19 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ 1.077252       ┆ 1.161562       ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:28:19 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:28:19 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:28:19 | INFO | P6 | ========================
+2026-04-19 14:28:19 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:28:19 | INFO | P6 | ========================
+2026-04-19 14:28:19 | INFO | P6 | END main()
+2026-04-19 14:42:06 | INFO | P6 | === RUN START ===
+2026-04-19 14:42:06 | INFO | P6 | project=CINTEL
+2026-04-19 14:42:06 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:42:06 | INFO | P6 | python=3.14.0
+2026-04-19 14:42:06 | INFO | P6 | os=Windows 11
+2026-04-19 14:42:06 | INFO | P6 | shell=powershell
+2026-04-19 14:42:06 | INFO | P6 | cwd=.
+2026-04-19 14:42:06 | INFO | P6 | github_actions=False
+2026-04-19 14:42:06 | INFO | P6 | ========================
+2026-04-19 14:42:06 | INFO | P6 | START main()
+2026-04-19 14:42:06 | INFO | P6 | ========================
+2026-04-19 14:42:06 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:42:06 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:42:06 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:42:06 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:42:06 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:42:06 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:42:07 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:42:07 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:42:07 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:42:07 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ -0.549844       ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ -1.270843       ┆ -0.908764      │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ -1.25081        ┆ -1.358685      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:42:07 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:42:07 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433333   ┆ 0.026486       ┆ 33.711554      ┆ 0.139046       ┆ 0.225629       ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:42:07 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:42:07 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:42:07 | INFO | P6 | ========================
+2026-04-19 14:42:07 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:42:07 | INFO | P6 | ========================
+2026-04-19 14:42:07 | INFO | P6 | END main()
+2026-04-19 14:43:02 | INFO | P6 | === RUN START ===
+2026-04-19 14:43:02 | INFO | P6 | project=CINTEL
+2026-04-19 14:43:02 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:43:02 | INFO | P6 | python=3.14.0
+2026-04-19 14:43:02 | INFO | P6 | os=Windows 11
+2026-04-19 14:43:02 | INFO | P6 | shell=powershell
+2026-04-19 14:43:02 | INFO | P6 | cwd=.
+2026-04-19 14:43:02 | INFO | P6 | github_actions=False
+2026-04-19 14:43:02 | INFO | P6 | ========================
+2026-04-19 14:43:02 | INFO | P6 | START main()
+2026-04-19 14:43:02 | INFO | P6 | ========================
+2026-04-19 14:43:02 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:43:02 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:43:02 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:43:02 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:43:02 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:43:03 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:43:04 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:43:04 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:43:04 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=40.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:43:04 | INFO | P6 | STEP 3. Anomalies detected: shape: (7, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 195      ┆ 9      ┆ 8000             ┆ 0.046154   ┆ … ┆ 0.041422         ┆ 39.011181       ┆ 1.399094        ┆ 1.330964       │
+│ 200      ┆ 10     ┆ 8500             ┆ 0.05       ┆ … ┆ 0.04373          ┆ 40.038653       ┆ 1.368789        ┆ 1.347858       │
+│ 205      ┆ 11     ┆ 9000             ┆ 0.053659   ┆ … ┆ 0.046894         ┆ 41.251573       ┆ 1.368505        ┆ 1.322617       │
+│ 210      ┆ 12     ┆ 9600             ┆ 0.057143   ┆ … ┆ 0.049812         ┆ 42.628473       ┆ 1.233199        ┆ 1.358464       │
+│ 205      ┆ 10     ┆ 9000             ┆ 0.04878    ┆ … ┆ 0.051147         ┆ 43.408961       ┆ -0.549844       ┆ 0.281322       │
+│ 200      ┆ 9      ┆ 8500             ┆ 0.045      ┆ … ┆ 0.050916         ┆ 43.703833       ┆ -1.270843       ┆ -0.908764      │
+│ 195      ┆ 8      ┆ 8000             ┆ 0.041026   ┆ … ┆ 0.049122         ┆ 43.408961       ┆ -1.25081        ┆ -1.358685      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:43:04 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:43:04 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433      ┆ 0.026          ┆ 33.712         ┆ 0.139          ┆ 0.226          ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:43:04 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:43:04 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:43:04 | INFO | P6 | ========================
+2026-04-19 14:43:04 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:43:04 | INFO | P6 | ========================
+2026-04-19 14:43:04 | INFO | P6 | END main()
+2026-04-19 14:45:33 | INFO | P6 | === RUN START ===
+2026-04-19 14:45:33 | INFO | P6 | project=CINTEL
+2026-04-19 14:45:33 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:45:33 | INFO | P6 | python=3.14.0
+2026-04-19 14:45:33 | INFO | P6 | os=Windows 11
+2026-04-19 14:45:33 | INFO | P6 | shell=powershell
+2026-04-19 14:45:33 | INFO | P6 | cwd=.
+2026-04-19 14:45:33 | INFO | P6 | github_actions=False
+2026-04-19 14:45:33 | INFO | P6 | ========================
+2026-04-19 14:45:33 | INFO | P6 | START main()
+2026-04-19 14:45:33 | INFO | P6 | ========================
+2026-04-19 14:45:33 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:45:33 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:45:33 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_case.csv
+2026-04-19 14:45:33 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:45:33 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:45:34 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:45:35 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:45:35 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:45:35 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=36.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:45:35 | INFO | P6 | STEP 3. Anomalies detected: shape: (17, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 180      ┆ 6      ┆ 6500             ┆ 0.033333   ┆ … ┆ 0.031962         ┆ 34.956297       ┆ 0.546509        ┆ 1.414695       │
+│ 182      ┆ 7      ┆ 6800             ┆ 0.038462   ┆ … ┆ 0.033772         ┆ 35.605295       ┆ 1.405092        ┆ 1.479094       │
+│ 185      ┆ 7      ┆ 7000             ┆ 0.037838   ┆ … ┆ 0.035525         ┆ 36.312398       ┆ 0.951798        ┆ 1.202863       │
+│ 188      ┆ 8      ┆ 7300             ┆ 0.042553   ┆ … ┆ 0.037179         ┆ 37.106926       ┆ 1.413851        ┆ 1.258521       │
+│ 190      ┆ 8      ┆ 7600             ┆ 0.042105   ┆ … ┆ 0.038858         ┆ 38.028275       ┆ 0.868434        ┆ 1.338111       │
+│ …        ┆ …      ┆ …                ┆ …          ┆ … ┆ …                ┆ …               ┆ …               ┆ …              │
+│ 190      ┆ 7      ┆ 7600             ┆ 0.036842   ┆ … ┆ 0.045758         ┆ 42.628473       ┆ -1.148167       ┆ -1.15713       │
+│ 185      ┆ 6      ┆ 7200             ┆ 0.032432   ┆ … ┆ 0.040816         ┆ 41.2694         ┆ -1.297272       ┆ -1.188582      │
+│ 180      ┆ 5      ┆ 6800             ┆ 0.027778   ┆ … ┆ 0.036616         ┆ 40.044468       ┆ -1.298122       ┆ -1.238468      │
+│ 175      ┆ 5      ┆ 6500             ┆ 0.028571   ┆ … ┆ 0.03333          ┆ 38.973039       ┆ -0.84839        ┆ -1.154685      │
+│ 170      ┆ 4      ┆ 6200             ┆ 0.023529   ┆ … ┆ 0.029831         ┆ 38.062028       ┆ -1.251296       ┆ -1.128968      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:45:35 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:45:35 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433      ┆ 0.026          ┆ 33.712         ┆ 0.139          ┆ 0.226          ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:45:35 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:45:35 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_case.csv
+2026-04-19 14:45:35 | INFO | P6 | ========================
+2026-04-19 14:45:35 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:45:35 | INFO | P6 | ========================
+2026-04-19 14:45:35 | INFO | P6 | END main()
+2026-04-19 14:52:15 | INFO | P6 | === RUN START ===
+2026-04-19 14:52:15 | INFO | P6 | project=CINTEL
+2026-04-19 14:52:15 | INFO | P6 | repo_dir=cintel-06-continuous-intelligence
+2026-04-19 14:52:15 | INFO | P6 | python=3.14.0
+2026-04-19 14:52:15 | INFO | P6 | os=Windows 11
+2026-04-19 14:52:15 | INFO | P6 | shell=powershell
+2026-04-19 14:52:15 | INFO | P6 | cwd=.
+2026-04-19 14:52:15 | INFO | P6 | github_actions=False
+2026-04-19 14:52:15 | INFO | P6 | ========================
+2026-04-19 14:52:15 | INFO | P6 | START main()
+2026-04-19 14:52:15 | INFO | P6 | ========================
+2026-04-19 14:52:15 | INFO | P6 | ROOT_DIR = .
+2026-04-19 14:52:15 | INFO | P6 | DATA_FILE = data\system_metrics_case.csv
+2026-04-19 14:52:15 | INFO | P6 | OUTPUT_FILE = artifacts\system_assessment_alex.csv
+2026-04-19 14:52:15 | INFO | P6 | ARTIFACTS_DIR = artifacts
+2026-04-19 14:52:15 | INFO | P6 | STEP 1. Loaded 60 system records
+2026-04-19 14:52:16 | INFO | P6 | STEP 2. Designing signals from raw metrics...
+2026-04-19 14:52:17 | INFO | P6 | STEP 2. Signals designed and graphed
+2026-04-19 14:52:17 | INFO | P6 | STEP 3. Checking for anomalies in system signals...
+2026-04-19 14:52:17 | INFO | P6 | STEP 3. Using thresholds: MAX_ERROR_RATE=0.05, MAX_AVG_LATENCY=36.0, Z-SCORE_THRESHOLD=2.0
+2026-04-19 14:52:17 | INFO | P6 | STEP 3. Anomalies detected: shape: (17, 11)
+┌──────────┬────────┬──────────────────┬────────────┬───┬──────────────────┬─────────────────┬─────────────────┬────────────────┐
+│ requests ┆ errors ┆ total_latency_ms ┆ error_rate ┆ … ┆ error_rate_roll_ ┆ latency_roll_me ┆ error_rate_zsco ┆ latency_zscore │
+│ ---      ┆ ---    ┆ ---              ┆ ---        ┆   ┆ mean             ┆ an              ┆ re              ┆ ---            │
+│ i64      ┆ i64    ┆ i64              ┆ f64        ┆   ┆ ---              ┆ ---             ┆ ---             ┆ f64            │
+│          ┆        ┆                  ┆            ┆   ┆ f64              ┆ f64             ┆ f64             ┆                │
+╞══════════╪════════╪══════════════════╪════════════╪═══╪══════════════════╪═════════════════╪═════════════════╪════════════════╡
+│ 180      ┆ 6      ┆ 6500             ┆ 0.033333   ┆ … ┆ 0.031962         ┆ 34.956297       ┆ 0.546509        ┆ 1.414695       │
+│ 182      ┆ 7      ┆ 6800             ┆ 0.038462   ┆ … ┆ 0.033772         ┆ 35.605295       ┆ 1.405092        ┆ 1.479094       │
+│ 185      ┆ 7      ┆ 7000             ┆ 0.037838   ┆ … ┆ 0.035525         ┆ 36.312398       ┆ 0.951798        ┆ 1.202863       │
+│ 188      ┆ 8      ┆ 7300             ┆ 0.042553   ┆ … ┆ 0.037179         ┆ 37.106926       ┆ 1.413851        ┆ 1.258521       │
+│ 190      ┆ 8      ┆ 7600             ┆ 0.042105   ┆ … ┆ 0.038858         ┆ 38.028275       ┆ 0.868434        ┆ 1.338111       │
+│ …        ┆ …      ┆ …                ┆ …          ┆ … ┆ …                ┆ …               ┆ …               ┆ …              │
+│ 190      ┆ 7      ┆ 7600             ┆ 0.036842   ┆ … ┆ 0.045758         ┆ 42.628473       ┆ -1.148167       ┆ -1.15713       │
+│ 185      ┆ 6      ┆ 7200             ┆ 0.032432   ┆ … ┆ 0.040816         ┆ 41.2694         ┆ -1.297272       ┆ -1.188582      │
+│ 180      ┆ 5      ┆ 6800             ┆ 0.027778   ┆ … ┆ 0.036616         ┆ 40.044468       ┆ -1.298122       ┆ -1.238468      │
+│ 175      ┆ 5      ┆ 6500             ┆ 0.028571   ┆ … ┆ 0.03333          ┆ 38.973039       ┆ -0.84839        ┆ -1.154685      │
+│ 170      ┆ 4      ┆ 6200             ┆ 0.023529   ┆ … ┆ 0.029831         ┆ 38.062028       ┆ -1.251296       ┆ -1.128968      │
+└──────────┴────────┴──────────────────┴────────────┴───┴──────────────────┴─────────────────┴─────────────────┴────────────────┘
+2026-04-19 14:52:17 | INFO | P6 | STEP 4. Summarizing system state from monitored signals...
+2026-04-19 14:52:17 | INFO | P6 | STEP 4. System summary:
+shape: (1, 8)
+┌──────────────┬────────────┬────────────────┬────────────────┬────────────────┬────────────────┬──────────────┬────────────────┐
+│ avg_requests ┆ avg_errors ┆ avg_error_rate ┆ avg_latency_ms ┆ avg_error_rate ┆ avg_latency_zs ┆ system_state ┆ degradation_re │
+│ ---          ┆ ---        ┆ ---            ┆ ---            ┆ _zscore        ┆ core           ┆ ---          ┆ ason           │
+│ f64          ┆ f64        ┆ f64            ┆ f64            ┆ ---            ┆ ---            ┆ str          ┆ ---            │
+│              ┆            ┆                ┆                ┆ f64            ┆ f64            ┆              ┆ str            │
+╞══════════════╪════════════╪════════════════╪════════════════╪════════════════╪════════════════╪══════════════╪════════════════╡
+│ 157.35       ┆ 4.433      ┆ 0.026          ┆ 33.712         ┆ 0.139          ┆ 0.226          ┆ STABLE       ┆ NONE           │
+└──────────────┴────────────┴────────────────┴────────────────┴────────────────┴────────────────┴──────────────┴────────────────┘
+2026-04-19 14:52:17 | INFO | P6 | STEP 4. System assessment completed
+2026-04-19 14:52:17 | INFO | P6 | STEP 5. Wrote system assessment file: C:\Repos\cintel-06-continuous-intelligence\artifacts\system_assessment_alex.csv
+2026-04-19 14:52:17 | INFO | P6 | ========================
+2026-04-19 14:52:17 | INFO | P6 | Pipeline executed successfully!
+2026-04-19 14:52:17 | INFO | P6 | ========================
+2026-04-19 14:52:17 | INFO | P6 | END main()
