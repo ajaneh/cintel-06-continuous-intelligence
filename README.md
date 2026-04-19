@@ -64,6 +64,7 @@ so that monitoring signals and anomaly detection
 produce visible results.
 
 ![Raw Metrics](/artifacts/raw_metrics.png)
+![Signals](/artifacts/signals.png)
 
 ## Working Files
 
