@@ -1,0 +1,102 @@
+# Continuous Intelligence Portfolio
+
+Alex Heyert
+
+2026-04
+
+This page summarizes my work on **continuous intelligence** projects.
+
+### 🛠️ Tech Stack & Standardized Architecture
+
+All data pipelines in this repository are built with a consistent, high-performance tech stack to ensure reproducibility and rapid execution:
+
+*   **Runtime:** `Python 3.14` (Leveraging the latest language features and performance optimizations)
+*   **Tooling & Env Management:** `uv` (Used for lightning-fast dependency resolution and deterministic environments)
+*   **Data Engine:** `Polars` (Utilized for multi-threaded, high-performance data manipulation and analysis)
+*   **Visualization:** `Matplotlib` (Standardized framework for all analytical plotting and reporting)
+
+## 1. Professional Project
+
+### [Repository Link](https://github.com/ajaneh/cintel-01-getting-started)
+
+### Brief Overview of Project Tools and Choices
+
+## 2. Anomaly Detection
+
+### [Repository Link](https://github.com/ajaneh/cintel-02-static-anomalies)
+
+### Techniques
+
+(Explain how anomalies were detected.)
+
+### Artifacts
+
+(clickable link to artifacts/ folder and explain result files)
+
+### Insights
+
+(What did this analysis reveal?)
+
+## 3. Signal Design
+
+### [Repository Link](https://github.com/ajaneh/cintel-03-signal-design))
+
+### Signals
+
+(List the custom signals you created and why.)
+
+### Artifacts
+
+(clickable link to artifacts/ folder and explain result files)
+
+### Insights
+
+(What did the signals reveal?)
+
+## 4. Rolling Monitoring
+
+### [Repository Link](https://github.com/ajaneh/cintel-04-rolling-monitoring))
+
+### Techniques
+
+(Explain how rolling windows were used.)
+
+### Artifacts
+
+(clickable link to artifacts/ folder and explain result files)
+
+### Insights
+
+(What patterns appeared?)
+
+## 5. Drift Detection
+
+### [Repository Link](https://github.com/ajaneh/cintel-05-drift-detection)
+
+### Techniques
+
+(Explain how reference and current periods were compared.)
+
+### Artifacts
+
+(clickable link to artifacts/ folder and explain result files)
+
+### Insights
+
+(What changed? How do you know? How does this help make actionable decisions?)
+
+## 6. Continuous Intelligence Pipeline
+
+### [Repository Link](https://github.com/ajaneh/cintel-06-continuous-intelligence))
+
+### Techniques
+
+(Describe how signals and monitoring techniques were combined.)
+
+### Artifacts
+
+(clickable link to artifacts/ folder and explain result files)
+
+### Assessment
+
+(What does the pipeline say about the system state?)
