@@ -39,7 +39,7 @@ All data pipelines in this repository are built with a consistent, high-performa
 
 ## 3. Signal Design
 
-### [Repository Link](https://github.com/ajaneh/cintel-03-signal-design))
+### [Repository Link](https://github.com/ajaneh/cintel-03-signal-design)
 
 ### Signals
 
@@ -55,7 +55,7 @@ All data pipelines in this repository are built with a consistent, high-performa
 
 ## 4. Rolling Monitoring
 
-### [Repository Link](https://github.com/ajaneh/cintel-04-rolling-monitoring))
+### [Repository Link](https://github.com/ajaneh/cintel-04-rolling-monitoring)
 
 ### Techniques
 
@@ -87,7 +87,7 @@ All data pipelines in this repository are built with a consistent, high-performa
 
 ## 6. Continuous Intelligence Pipeline
 
-### [Repository Link](https://github.com/ajaneh/cintel-06-continuous-intelligence))
+### [Repository Link](https://github.com/ajaneh/cintel-06-continuous-intelligence)
 
 ### Techniques
 
