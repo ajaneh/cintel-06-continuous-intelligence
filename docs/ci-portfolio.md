@@ -62,15 +62,20 @@ Without detailed latency information (latency per request versus per error, for 
 
 ### Techniques
 
-(Explain how rolling windows were used.)
+I acquired ridership data from the Chicago Transit Autority. I used their data portal to simplify the data I exported and used. After grouping by date I aggregated the sum of rows from the "rides" field, because I was interested in rides over time rather than rides per seperate station.
+
+The rolling mean was the main signal of interest. The size of the window was adjusted several times in order to meaningfully smooth out noise. When choosing window size it's important to understand the natural time sequences of the data you're working with.
 
 ### Artifacts
+![Monthly Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_30.png) ![Annual Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_365.png)
 
-(clickable link to artifacts/ folder and explain result files)
+
+[Artifact Folder](https://github.com/ajaneh/cintel-04-rolling-monitoring/tree/main/artifacts)
 
 ### Insights
 
-(What patterns appeared?)
+Noise reduced as window size increased. When looking at the graph with a "monthly window" it appears that ridership increased in warmer seasons (summer, fall) and sharply decreased in the winter and spring.
+Ridership seems to increase from 2001 until it's maximum in 2015. We then see a dramatic decrease around 2019 - 2020. Since we know larger winows increase lag it's reasonable to assume that the dramatic decrease was caused by the COVID shutdowns. Ridership has increased in the last 5 years but not to pre 2020 averages. This may be indicicative of the increase in remote jobs since COVID.
 
 ## 5. Drift Detection
 
