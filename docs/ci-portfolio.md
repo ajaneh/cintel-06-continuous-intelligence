@@ -43,15 +43,18 @@ Use of Z score only flagged one anomaly, a patient 118 years old. This a notable
 
 ### Signals
 
-(List the custom signals you created and why.)
+The signals used were Error rate (Errors ÷ Requests) and Average latency time (Latency ÷ Requests). Latency percentiles were calculated as well and tail latencies were logged. 
 
 ### Artifacts
+![Histogram](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/latency_histogram.png)
 
-(clickable link to artifacts/ folder and explain result files)
+![SignalsVLatency](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/requests_error_rate_vs_latency.png)
+[Aritfacts Folder](https://github.com/ajaneh/cintel-03-signal-design/tree/main/artifacts)
 
 ### Insights
 
-(What did the signals reveal?)
+Only 3 of the data rows had a latency above the 90th percentile. Of these three the error rate was on the higher side, averaging around 4.5%, the total number of requests was also high.
+Without detailed latency information (latency per request versus per error, for example) it's difficult to determine if errors are slow or if more requests result in greater latency. 
 
 ## 4. Rolling Monitoring
 
