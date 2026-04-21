@@ -6,20 +6,18 @@ Alex Heyert
 
 This page summarizes my work on **continuous intelligence** projects.
 
-### 🛠️ Tech Stack & Standardized Architecture
-
-All data pipelines in this repository are built with a consistent, high-performance tech stack to ensure reproducibility and rapid execution:
-
-*   **Runtime:** `Python 3.14` (Leveraging the latest language features and performance optimizations)
-*   **Tooling & Env Management:** `uv` (Used for lightning-fast dependency resolution and deterministic environments)
-*   **Data Engine:** `Polars` (Utilized for multi-threaded, high-performance data manipulation and analysis)
-*   **Visualization:** `Matplotlib` (Standardized framework for all analytical plotting and reporting)
-
 ## 1. Professional Project
 
 ### [Repository Link](https://github.com/ajaneh/cintel-01-getting-started)
 
 ### Brief Overview of Project Tools and Choices
+
+All data pipelines in these repositories were built with a consistent, high-performance tech stack to ensure reproducibility and rapid execution:
+
+*   **Runtime:** `Python 3.14` (Leveraging the latest language features and performance optimizations)
+*   **Tooling & Env Management:** `uv` (Used for lightning-fast dependency resolution and deterministic environments)
+*   **Data Engine:** `Polars` (Utilized for multi-threaded, high-performance data manipulation and analysis)
+*   **Visualization:** `Matplotlib` (Standardized framework for all analytical plotting and reporting)
 
 ## 2. Anomaly Detection
 
@@ -27,15 +25,17 @@ All data pipelines in this repository are built with a consistent, high-performa
 
 ### Techniques
 
-(Explain how anomalies were detected.)
+I used example data for an adult clinic that contained age and height. Anomalies were detected with rule based flagging. Initially the project used thresholds for age and height. My modification calculated the Z scores for age and height and used a threshold of ± 2. 
 
 ### Artifacts
 
-(clickable link to artifacts/ folder and explain result files)
+[Artifacts Folder](https://github.com/ajaneh/cintel-02-static-anomalies/tree/main/artifacts)
+![Scatterplot](https://github.com/ajaneh/cintel-02-static-anomalies/blob/main/artifacts/scatter_plot_alex.png)
+
 
 ### Insights
 
-(What did this analysis reveal?)
+Use of Z score only flagged one anomaly, a patient 118 years old. This a notable outlier visible in the scatterplot. It's also interesting to note that as age increased height decreased, which is consistent with the real life phenomenon. 
 
 ## 3. Signal Design
 
