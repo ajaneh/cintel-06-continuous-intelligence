@@ -83,15 +83,22 @@ Ridership seems to increase from 2001 until it's maximum in 2015. We then see a 
 
 ### Techniques
 
-(Explain how reference and current periods were compared.)
+I used "NCDC Hourly Global Surface Variables-Selected Subset" (https://catalog.data.gov/dataset/ncdc-hourly-global-surface-variables-selected-subset) to gather times and temperature data from "Sacramento Airport Surface Temperatures" I filtered the temperatures down so they only had a TMP_Q_CODE of 5 which corresponded to values deemed reliable. Because of this filter. The temperature readings are not consistently spaced apart in time.
+
+Initially I tried to use a trailing baseline but this wasn't feasible with the inconsistent sampling rate.
+I established a baseline by calculating the average temperature for the first 20% of the data. A baseline standard deviation was also calculated to assess for volatility drift.
+Drift detection thresholds were set to 10% above the baseline mean. Volatility threshold was the baseline standard deviation + 1° C.
 
 ### Artifacts
 
-(clickable link to artifacts/ folder and explain result files)
+![Temperature](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/temperature_trends_alex.png)
+![Threshold](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/threshold_colored_alex.png)
+[Artifacts Folder](https://github.com/ajaneh/cintel-05-drift-detection/tree/main/artifacts)
 
 ### Insights
 
-(What changed? How do you know? How does this help make actionable decisions?)
+Air temperature data from an airport wasn't a perfect choice for this project. The data was collected over one year, so the raw results follow a near normal distribution.
+The most noticable "drift" occurs during summer time, when higher temperatures would be expected. It's interesting to note that volatility increases during the summer as well. 
 
 ## 6. Continuous Intelligence Pipeline
 
