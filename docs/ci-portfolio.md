@@ -30,7 +30,7 @@ I used example data for an adult clinic that contained age and height. Anomalies
 ### Artifacts
 
 [Artifacts Folder](https://github.com/ajaneh/cintel-02-static-anomalies/tree/main/artifacts)
-![Scatterplot](https://github.com/ajaneh/cintel-02-static-anomalies/blob/main/artifacts/scatter_plot_alex.png)
+![Scatterplot](https://github.com/ajaneh/cintel-02-static-anomalies/blob/main/artifacts/scatter_plot_alex.png?raw=true)
 
 
 ### Insights
@@ -46,9 +46,9 @@ Use of Z score only flagged one anomaly, a patient 118 years old. This a notable
 The signals used were Error rate (Errors ÷ Requests) and Average latency time (Latency ÷ Requests). Latency percentiles were calculated as well and tail latencies were logged. 
 
 ### Artifacts
-![Histogram](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/latency_histogram.png)
+![Histogram](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/latency_histogram.png?raw=true)
 
-![SignalsVLatency](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/requests_error_rate_vs_latency.png)
+![SignalsVLatency](https://github.com/ajaneh/cintel-03-signal-design/blob/main/artifacts/requests_error_rate_vs_latency.png?raw=true)
 [Aritfacts Folder](https://github.com/ajaneh/cintel-03-signal-design/tree/main/artifacts)
 
 ### Insights
@@ -67,7 +67,8 @@ I acquired ridership data from the Chicago Transit Autority. I used their data p
 The rolling mean was the main signal of interest. The size of the window was adjusted several times in order to meaningfully smooth out noise. When choosing window size it's important to understand the natural time sequences of the data you're working with.
 
 ### Artifacts
-![Monthly Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_30.png) ![Annual Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_365.png)
+![Monthly Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_30.png?raw=true) 
+![Annual Window](https://github.com/ajaneh/cintel-04-rolling-monitoring/blob/main/artifacts/window_365.png?raw=true)
 
 
 [Artifact Folder](https://github.com/ajaneh/cintel-04-rolling-monitoring/tree/main/artifacts)
@@ -91,8 +92,8 @@ Drift detection thresholds were set to 10% above the baseline mean. Volatility t
 
 ### Artifacts
 
-![Temperature](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/temperature_trends_alex.png)
-![Threshold](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/threshold_colored_alex.png)
+![Temperature](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/temperature_trends_alex.png?raw=true)
+![Threshold](https://github.com/ajaneh/cintel-05-drift-detection/blob/main/artifacts/threshold_colored_alex.png?raw=true)
 [Artifacts Folder](https://github.com/ajaneh/cintel-05-drift-detection/tree/main/artifacts)
 
 ### Insights
@@ -112,9 +113,18 @@ The example only noted whether or not the system was stable, I added a field cal
 ### Artifacts
 ![Raw Data](https://github.com/ajaneh/cintel-06-continuous-intelligence/blob/main/artifacts/raw_metrics.png?raw=true)
 ![Signals](https://github.com/ajaneh/cintel-06-continuous-intelligence/blob/main/artifacts/signals.png?raw=true)
+
+
+
+
+| requests| avg errors| avg error rate| avg latency (ms)| avg_error_rate_zscore | avg_latency_zscore | system state | degradation reason |
+|:---|:-:|:-:|:-:|:-:|:-:|:-:|---:|
+|157.35 | 4.433 | 0.026 | 33.712 | 0.139 | 0.226 | STABLE| NONE |
+
+
 [Artifacts Folder](https://github.com/ajaneh/cintel-06-continuous-intelligence/tree/main/artifacts)
 
 ### Assessment
 
 The averages of this small dataset do indicate stability, both calculated z scores were less than 0.3. 
-I think a small dataset doesn't allow much room for meaningful interpretation. However if I think of this as one part of a larger dataset, perhaps representative of metrics every 5 minutes, this system summary would be useful for detecting system abnormalities
+A small dataset doesn't always allow for meaningful interpretation. However if we think of this as one part of a larger dataset, perhaps representative of metrics every 5 minutes, the system summary would be useful for detecting system abnormalities.
