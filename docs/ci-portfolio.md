@@ -106,12 +106,15 @@ The most noticable "drift" occurs during summer time, when higher temperatures w
 
 ### Techniques
 
-(Describe how signals and monitoring techniques were combined.)
+The signals of interest that were created were averages and z scores for Error rate and Latency. The system was summarized with the averages of each incoming signal. Then expanded to include average error rate, average latency, and average Z scores for error rate and latency. The entire dataset was used to evaluate the system's state, rather than flagging individual values.
+The example only noted whether or not the system was stable, I added a field called "degradation reason" to assist with troubleshooting the system and I added detected single point anomalies to the log.
 
 ### Artifacts
-
-(clickable link to artifacts/ folder and explain result files)
+![Raw Data](https://github.com/ajaneh/cintel-06-continuous-intelligence/blob/main/artifacts/raw_metrics.png?raw=true)
+![Signals](https://github.com/ajaneh/cintel-06-continuous-intelligence/blob/main/artifacts/signals.png?raw=true)
+[Artifacts Folder](https://github.com/ajaneh/cintel-06-continuous-intelligence/tree/main/artifacts)
 
 ### Assessment
 
-(What does the pipeline say about the system state?)
+The averages of this small dataset do indicate stability, both calculated z scores were less than 0.3. 
+I think a small dataset doesn't allow much room for meaningful interpretation. However if I think of this as one part of a larger dataset, perhaps representative of metrics every 5 minutes, this system summary would be useful for detecting system abnormalities
